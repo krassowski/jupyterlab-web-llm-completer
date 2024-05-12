@@ -1,0 +1,25 @@
+# a mybinder.org-ready environment for demoing jupyterlab-transformers-completer
+# this environment may also be used locally on Linux/MacOS/Windows, e.g.
+#
+#   conda env update --file binder/environment.yml
+#   conda activate jupyterlab-transformers-completer-demo
+#
+name: jupyterlab-web_llm-completer-demo
+
+channels:
+  - conda-forge
+
+dependencies:
+  # runtime dependencies
+  - python >=3.10,<3.11.0a0
+  - jupyterlab >=4.2.0,<5
+  # lab dev
+  # https://github.com/conda-forge/hatch-feedstock/pull/22#issuecomment-2106302514
+  - hatch <1.10.0
+  - build
+  # labextension build dependencies
+  - nodejs >=20,<21
+  - pip
+  - wheel
+  # additional packages for demos
+  # - ipywidgets
