@@ -6,6 +6,9 @@
 
 Inline completion provider using `web-llm` for JupyterLab
 
+> [!IMPORTANT]  
+> I did not succeed running it on my laptop due to poor support for WebGPU on Linux. Please do let me know if it works if you can test it.
+
 This extension is aimed for developers of JupyterLab extensions (and advanced JupyterLab users) to explore the integration of the inline completions API added in JupyterLab 4.1.
 
 All models linked from this demonstration run exclusively **in your browser**, and are:
@@ -38,8 +41,6 @@ These models are not vetted for accuracy nor propriety and should not be deploye
     - behind `dom.webgpu.enabled` in Firefox
     - behind `chrome://flags/#enable-webgpu-developer-features` in Chrome on Linux (also requires starting with `google-chrome --enable-unsafe-webgpu --enable-features=Vulkan,UseSkiaRenderer`)
 - `jupyter-server` to enable additional headers (`jupyverse` and `jupyterlite` not tested yet)
-
-T
 
 When this extension is enabled, the server will return additional headers,
 which will prevent fetching external resources, for example the extension logos
