@@ -8,6 +8,11 @@ Inline completion provider using `web-llm` for JupyterLab
 
 > [!IMPORTANT]  
 > I did not succeed running it on my laptop due to poor support for WebGPU on Linux. Please do let me know if it works if you can test it.
+>
+> For more mature inlie completers see:
+> - [jupyterlab-transformers-completer](https://github.com/krassowski/jupyterlab-transformers-completer) (in browser)
+> - [jupyterlab-codeium](jupyterlab-codeium) (API)
+> - [jupyter-ai](https://github.com/jupyterlab/jupyter-ai) (API or local)
 
 This extension is aimed for developers of JupyterLab extensions (and advanced JupyterLab users) to explore the integration of the inline completions API added in JupyterLab 4.1.
 
